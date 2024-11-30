@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Mi Espacio Virtual</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Espacio Virtual</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre mí</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <section class="contact-container">
+            <h2>Contáctame</h2>
+            <form id="contact-form-full" class="full-contact-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono (Opcional)</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+
+                <div class="form-group">
+                    <label for="asunto">Asunto</label>
+                    <select id="asunto" name="asunto" required>
+                        <option value="">Selecciona un asunto</option>
+                        <option value="consulta">Consulta General</option>
+                        <option value="colaboracion">Colaboración</option>
+                        <option value="comentario">Comentario</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="politicas" required>
+                        Acepto las políticas de privacidad
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                
+                <div id="form-message-full" class="form-message"></div>
+            </form>
+        </section>
+
+        <section class="contact-info">
+            <h3>Información de Contacto</h3>
+            <div class="contact-details">
+                <p>📧 Email: contacto@miespaciovirtual.com</p>
+                <p>📱 Teléfono: +57 55 1234 5678</p>
+                <p>📍 Ubicación: Armenia, Quindio</p>
+            </div>
+
+            <div class="social-media">
+                <h4>Sígueme en Redes</h4>
+                <div class="social-links">
+                    <a href="#" class="social-icon">Facebook</a>
+                    <a href="#" class="social-icon">Instagram</a>
+                    <a href="#" class="social-icon">Twitter</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Espacio Virtual</p>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+</html>

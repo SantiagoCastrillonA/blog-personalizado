@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Espacio Virtual</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Espacio Virtual</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre mí</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="blog-posts">
+            <article class="blog-card">
+                <img src="img\japon.jpg" alt="Post 1">
+                <h2>Mi Primer Viaje a Japón</h2>
+                <p class="post-date">15 de marzo, 2024</p>
+                <p>Un resumen de mi increíble experiencia recorriendo Tokio, sus templos y su fascinante cultura...</p>
+            </article>
+
+            <article class="blog-card">
+                <img src="img\desarrollo_web.jpg" alt="Post 2">
+                <h2>Desarrollo Web: Mis Primeros Pasos</h2>
+                <p class="post-date">1 de febrero, 2024</p>
+                <p>Compartiendo mi journey en el mundo del desarrollo web, los desafíos y aprendizajes...</p>
+            </article>
+
+            <article class="blog-card">
+                <img src="img\productivo.jpg" alt="Post 3">
+                <h2>Consejos para Ser Productivo</h2>
+                <p class="post-date">20 de enero, 2024</p>
+                <p>Técnicas y herramientas que me han ayudado a mantener mi enfoque y productividad...</p>
+            </article>
+        </section>
+
+        <section id="statistics">
+            <button id="stats-button">Ver estadísticas</button>
+            <div id="visit-count">Visitas: 0</div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://web.facebook.com/santiago.castrillonarbelaez" class="social-icon">Facebook</a>
+            <a href="https://www.instagram.com/sca_2_vmp/" class="social-icon">Instagram</a>
+            <a href="https://www.instagram.com/sca_2_vmp/" class="social-icon">X</a>
+        </div>
+
+        <form id="contact-form">
+            <h3>Déjanos un comentario</h3>
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+            <div id="form-message"></div>
+        </form>
+
+        <p>&copy; 2024 Mi Espacio Virtual</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
