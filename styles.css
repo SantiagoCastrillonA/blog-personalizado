@@ -535,3 +535,16 @@ body {
   border-radius: 4px;
   font-size: 15px;
 }
+
+p {
+  margin-bottom: 20px;
+}
+.technologies {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 5px; 
+}
+
+.technologies p {
+  margin-bottom: 10px;
+}
