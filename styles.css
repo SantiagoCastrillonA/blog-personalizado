@@ -494,7 +494,7 @@ body {
   
   .about-image-container img {
     max-width: 250px;
-    border-radius: 50%;
+    border-radius: 2%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   }
   
